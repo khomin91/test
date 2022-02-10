@@ -1,0 +1,19 @@
+
+these all are under store and its permission -> store_link
+
+/////////**************parent link store*************/////////////
+
+store parent link -> store_link
+
+vendor sub link -> vendor_r 
+all vendor -> vendor_r 
+vendor add -> vendor_c
+vendor edit -> vendor_u
+vendor delete -> vendor_d
+
+product sub Link -> product_r
+
+all product -> product_r
+all category -> product_r
+add category -> product_c
+add sub category -> product_c

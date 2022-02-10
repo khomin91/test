@@ -1,0 +1,11 @@
+const baseURL = "https://shopapi.sabbirinfo.com/"
+
+export const onLogin = baseURL + "onLogin"
+export const addVendor = baseURL + "addVendor"
+export const getAllVendor = baseURL + "getAllVendor"
+export const updateVendor = baseURL + "updateVendor"
+export const addCategorySubCategory = baseURL + "addCategorySubCategory"
+export const getAllCategorySubCategory = baseURL + "getAllCategorySubCategory"
+export const addSubCategory = baseURL + "addSubCategory"
+export const updateCategory = baseURL + "updateCategory"
+export const updateSubCategory = baseURL + "updateSubCategory"

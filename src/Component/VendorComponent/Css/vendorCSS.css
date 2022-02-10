@@ -1,0 +1,95 @@
+#uncontrolled-tab-example-tab-addVendor {
+    color: var(--brand-color);
+    text-transform: lowercase;
+}
+
+#uncontrolled-tab-example-tab-vendors {
+    color: var(--brand-color);
+    text-transform: lowercase;
+}
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    color: var(--dark-color) !important;
+    text-transform: lowercase;
+}
+
+/*all vendor css*/
+.tableWrapper {
+    position: relative;
+    min-width: 1090px;
+    overflow-x: hidden !important;
+    scrollbar-width: thin;
+    height: 100%;
+    padding-bottom: 40px;
+    padding-right: 15px;
+}
+
+.page-item.active .page-link, .page-item.active .dataTable-pagination a, .dataTable-pagination .page-item.active a, .dataTable-pagination li.active .page-link, .dataTable-pagination li.active a {
+    background: var(--brand-color) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.pagination.react-bootstrap-table-page-btns-ul {
+    position: absolute;
+    right: 20px;
+}
+
+.row.react-bootstrap-table-pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#pageDropDown {
+    display: none;
+}
+
+.vendorView {
+    color: var(--brand-color);
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.vendorTrash {
+    color: #e74f4f;
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.allVendorSearchGroup {
+    width: calc(100% - 118px);
+    margin-right: 10px;
+}
+
+.allVendorFilterFormGroup {
+    position: relative;
+    width: 90px;
+}
+
+.allVendorFilterArrow {
+    position: absolute;
+    font-size: .8rem;
+    top: 35%;
+    left: 70%;
+    color: white;
+
+}
+.vendorDetail{
+    text-transform: capitalize !important;
+}
+.vendorDetailDot{
+    font-weight: 700;
+}
+.vendorDetailDesc{
+    text-transform: capitalize !important;
+}
+.themeSpinner {
+    width: 25px;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+
+}

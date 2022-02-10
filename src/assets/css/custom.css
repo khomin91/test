@@ -1,0 +1,260 @@
+@import "styles.css";
+
+* {
+    font-family: sans-serif;
+    scrollbar-width: thin;
+}
+
+:root {
+    --brand-color: #5f70ec;
+    --brand-dark-color: #6371f5;
+    --off-color: rgba(142, 142, 142, 0.75);
+    --dark-fade: #525252;
+    --dark-color: #554c4c;
+    --highlighted-color: rgba(234, 233, 233, 0.5);
+    --fill-color: #30a3f6;
+    --on-white-lable: rgba(76, 76, 76, 0.66);
+    --lable-color: rgb(104, 104, 104);
+}
+
+/*content wrapper*/
+#layoutSidenav_content {
+    background: var(--highlighted-color);
+}
+
+.sb-sidenav-menu-nested > .menuLink {
+    font-size: 15px !important;
+}
+
+
+/*top nav bar*/
+.topNavBg {
+    background: var(--brand-color);
+    box-shadow: 0 1px 0 0px rgba(234, 234, 234, 0.18);
+}
+
+.dropdown-toggle::after {
+    color: #ffffff;
+}
+
+/*side nav toggle*/
+.sideNavToggle {
+    transform: translateX(-225px);
+}
+
+/*side bar styling*/
+.sb-sidenav-menu {
+    scrollbar-width: thin;
+}
+
+.toggleBtn {
+    box-shadow: none !important;
+    position: absolute;
+    right: -60px;
+    top: 14px;
+}
+
+.sideBarTop {
+    background: var(--brand-dark-color);
+    box-shadow: rgba(0, 0, 0, 0.19) 1.95px 1.95px 2.6px;
+}
+
+.sb-sidenav-menu {
+    margin-left: 6px;
+    background: #fafafa;
+}
+
+.sidebarThinBackground {
+    position: absolute;
+    background: #fafafa;
+    width: 6px;
+    height: 100%;
+    top: 105px;
+    left: 0;
+    z-index: 9;
+}
+
+.appName {
+    position: absolute;
+    top: 17px;
+    color: white !important;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    left: 50%;
+    transform: translateX(-60%);
+}
+
+.dashboard {
+    background: var(--highlighted-color) !important;
+}
+
+.menuLable {
+    color: var(--off-color) !important;
+}
+
+.menuLinkIcon {
+    color: var(--dark-color) !important;
+}
+
+.menuLink {
+    color: var(--dark-fade) !important;
+}
+
+.menu:hover {
+    background: var(--highlighted-color) !important;
+}
+
+.nav-link.menu.collapsed {
+    background: #fafafa;
+}
+
+.nav-link.menu {
+    background: var(--highlighted-color);
+}
+
+
+/*dashboard*/
+.dashboardTop {
+    background: var(--brand-color);
+    height: 200px;
+}
+
+.summeryCard {
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+
+.cardIcon {
+    margin: 10px 5px;
+    width: 70px;
+    height: 70px;
+    background: var(--fill-color);
+    padding: 10px;
+    color: white;
+    border-radius: 50%;
+}
+
+.takaSign {
+    width: 15px !important;
+    height: 15px !important;
+    color: var(--on-white-lable);
+    margin-left: -15px;
+}
+
+.amount {
+    margin-left: 10px;
+    color: black;
+    font-weight: 600;
+}
+
+.card-lable {
+    text-transform: uppercase;
+    font-size: .9rem;
+    color: var(--on-white-lable);
+
+}
+
+/*product styling*/
+.productContainer {
+    background: white;
+    overflow-x: auto;
+    margin: 20px 10px;
+    border-top: 5px solid var(--brand-color);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    min-height: 85vh;
+    padding-bottom: 50px;
+}
+
+
+/*form field and btn*/
+.themeBtn {
+    background: var(--brand-color);
+    box-shadow: none !important;
+    cursor: pointer;
+}
+
+.themeBtn:hover {
+    background: var(--brand-color);
+    opacity: .8;
+}
+
+.themeBtn:focus {
+    background: var(--brand-color);
+    opacity: .8;
+}
+
+.themeBtn:disabled {
+    color: #fff;
+    background: var(--brand-color);
+    opacity: .5;
+}
+
+.inputField {
+    box-shadow: none !important;
+    background: var(--highlighted-color);
+}
+
+.formLable {
+    color: var(--lable-color);
+    text-transform: lowercase;
+}
+
+.dropDown {
+    position: relative;
+}
+
+.DropDownArrow {
+    position: absolute;
+    top: 62%;
+    right: 10px;
+}
+.dropDown #formBasicEmail {
+    cursor: pointer;
+}
+#catDropDown {
+    cursor: pointer;
+}
+
+.appTable{
+    background: var(--highlighted-color);
+}
+
+/*bootstrap modal*/
+.fade.modal-backdrop.show {
+    z-index: 9999;
+}
+
+.fade.modal.show {
+    z-index: 9999;
+}
+
+
+/*small device*/
+@media (max-width: 405px) {
+    .vendorDetail, .vendorDetailDesc {
+        font-size: .8rem;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .vendorDetail, .vendorDetailDesc {
+        font-size: .8rem;
+    }
+
+    .allVendorSearchGroup {
+        width: calc(100% - 100px) !important;
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+    /*toggle btn styling*/
+    .toggleBtn {
+        right: -30px;
+    }
+}

@@ -1,0 +1,33 @@
+.catAndSubCatComp {
+    position: relative;
+}
+
+.catAndSubCatBorder {
+    width: 1px;
+    border-radius: 2px;
+    height: 100%;
+    background: #d5cbcb;
+    position: absolute;
+    top: 0;
+    right: 0px;
+}
+
+.formTop {
+    color: var(--lable-color);
+    text-transform: capitalize;
+    position: relative;
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
+
+.editCatSaveBtn {
+    font-size: 1.5rem;
+}
+
+.htmlTbl {
+    table-layout: fixed;
+}
+
+.appTblWidth {
+    max-width: 768px !important;
+}
